@@ -17,6 +17,8 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Shader/MyFirstShader.shader" />
       <option value="$PROJECT_DIR$/Assets/Shader/MyThirdShader.shader" />
+      <option value="$PROJECT_DIR$/Assets/Cross Section Shader/Shaders/OnePlaneBSP.shader" />
+      <option value="$PROJECT_DIR$/Assets/Shader/MySecondShader.shader" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1un39QXQS4676pysMqDMa5wG9bs" />

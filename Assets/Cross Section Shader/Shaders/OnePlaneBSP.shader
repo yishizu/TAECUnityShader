@@ -21,13 +21,13 @@
 			CompFront Always
 			PassFront Zero
 		}
-		Cull Back
+			Cull Back
 			CGPROGRAM
 			// Physically based Standard lighting model, and enable shadows on all light types
-#pragma surface surf Standard fullforwardshadows
+		#pragma surface surf Standard fullforwardshadows
 
 			// Use shader model 3.0 target, to get nicer looking lighting
-#pragma target 3.0
+		#pragma target 3.0
 
 			sampler2D _MainTex;
 
@@ -57,11 +57,11 @@
 			o.Smoothness = _Glossiness;
 			o.Alpha = c.a;
 		}
-		ENDCG
+			ENDCG
 		
 			Cull Front
 			CGPROGRAM
-#pragma surface surf NoLighting  noambient
+		#pragma surface surf NoLighting  noambient
 
 		struct Input {
 			half2 uv_MainTex;
