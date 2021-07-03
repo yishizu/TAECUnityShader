@@ -4,8 +4,9 @@ Shader "GEL/MyThirdShader"
     {
         _Color ("Color", Color) = (1,1,1,1)
         _MainTex ("Albedo (RGB)", 2D) = "white" {}
-        _Glossiness ("Smoothness", Range(0,1)) = 0.5
-        _Metallic ("Metallic", Range(0,1)) = 0.0
+        _PlaneNormal("PlaneNormal",Vector) = (0,1,0,0)
+		_PlanePosition("PlanePosition",Vector) = (0,0,0,1)
+        
     }
     SubShader
     {
@@ -20,32 +21,32 @@ Shader "GEL/MyThirdShader"
         #pragma target 3.0
 
         sampler2D _MainTex;
+        fixed3 _PlaneNormal;
+		fixed3 _PlanePosition;
+        fixed4 _Color;
+        
 
         struct Input
         {
             float2 uv_MainTex;
+            float3 worldPos;
         };
 
-        half _Glossiness;
-        half _Metallic;
-        fixed4 _Color;
+        bool checkVisability(fixed3 worldPos)
+		{
+			float dotProd1 = dot(worldPos - _PlanePosition, _PlaneNormal);
+			return dotProd1 > 0  ;
+		}
 
-        // Add instancing support for this shader. You need to check 'Enable Instancing' on materials that use the shader.
-        // See https://docs.unity3d.com/Manual/GPUInstancing.html for more information about instancing.
-        // #pragma instancing_options assumeuniformscaling
-        UNITY_INSTANCING_BUFFER_START(Props)
-            // put more per-instance properties here
-        UNITY_INSTANCING_BUFFER_END(Props)
-
+        
         void surf (Input IN, inout SurfaceOutputStandard o)
         {
-            // Albedo comes from a texture tinted by color
-            fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _Color;
-            o.Albedo = c.rgb;
-            // Metallic and smoothness come from slider variables
-            o.Metallic = _Metallic;
-            o.Smoothness = _Glossiness;
-            o.Alpha = c.a;
+            if (checkVisability(IN.worldPos))discard;
+			fixed4 c = tex2D(_MainTex, IN.uv_MainTex) * _Color;
+			o.Albedo = c.rgb;
+
+			o.Alpha = c.a;
+ 
         }
         ENDCG
     }

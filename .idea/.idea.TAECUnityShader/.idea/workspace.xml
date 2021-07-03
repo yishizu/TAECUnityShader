@@ -10,9 +10,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/CGIncludes/UnityPBSLighting.cginc" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Shader/MyFirstShader.shader" />
+      <option value="$PROJECT_DIR$/Assets/Shader/MyThirdShader.shader" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1un39QXQS4676pysMqDMa5wG9bs" />
@@ -25,6 +29,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
