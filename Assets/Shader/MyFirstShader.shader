@@ -3,7 +3,8 @@ Shader "GEL/MyFirstShader"
     Properties
     {
         _myColor ("Example Color", Color) = (1,1,1,1)
-
+        _myEmission ("Example Emission", Color) = (1,1,1,1)
+        _myNormal ("Example Normal", Color) = (1,1,1,1)
     }
     SubShader
     {
@@ -19,11 +20,15 @@ Shader "GEL/MyFirstShader"
         };
 
         float4 _myColor;
+        float4 _myEmission;
+        float4 _myNormal;
 
         void surf (Input IN, inout SurfaceOutputStandard o)
         {
-
+            
             o.Albedo = _myColor.rgb;
+            o.Emission = _myEmission.rgb;
+            o.Normal = _myNormal.rgb;
         }
         ENDCG
     }
