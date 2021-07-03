@@ -11,10 +11,8 @@ Unityでは、シェーダーは大きく3つのカテゴリーに分かれて�
 - **Ray tracing shader**は、レイトレーシングに関連する計算を行います。
 
 ## ShaderGraph　Or Shader program
+![maxresdefault](https://user-images.githubusercontent.com/48244588/124344573-0109bb80-dc0e-11eb-9c69-01ce5eda3cd1.jpg)
 
-![Hello%20Shader%206d1e8eaf0f4d4f9d860f2a4f02a95714/maxresdefault.jpg](Hello%20Shader%206d1e8eaf0f4d4f9d860f2a4f02a95714/maxresdefault.jpg)
-
-[Hello%20Shader%206d1e8eaf0f4d4f9d860f2a4f02a95714/93f407_d007d8f79659497bbe0e095d1d1b78b3_mv2.webp](Hello%20Shader%206d1e8eaf0f4d4f9d860f2a4f02a95714/93f407_d007d8f79659497bbe0e095d1d1b78b3_mv2.webp)
 
 # CrossShaderをみてみよう
 
@@ -22,7 +20,8 @@ Unityでは、シェーダーは大きく3つのカテゴリーに分かれて�
 
 [https://assetstore.unity.com/packages/vfx/shaders/cross-section-66300](https://assetstore.unity.com/packages/vfx/shaders/cross-section-66300)
 
-```csharp
+```csharp![crvE6](https://user-images.githubusercontent.com/48244588/124344594-1c74c680-dc0e-11eb-8d93-3683b923a9df.png)
+
 bool checkVisability(fixed3 worldPos)
 {
   float dotProd1 = dot(worldPos - _PlanePosition, _PlaneNormal);
@@ -30,9 +29,10 @@ bool checkVisability(fixed3 worldPos)
 }
 ```
 
-![Hello%20Shader%206d1e8eaf0f4d4f9d860f2a4f02a95714/crvE6.png](Hello%20Shader%206d1e8eaf0f4d4f9d860f2a4f02a95714/crvE6.png)
+![Uploading crvE6.png…]()
+![images](https://user-images.githubusercontent.com/48244588/124344595-1f6fb700-dc0e-11eb-83f9-4496641a39af.png)
 
-![Hello%20Shader%206d1e8eaf0f4d4f9d860f2a4f02a95714/images.png](Hello%20Shader%206d1e8eaf0f4d4f9d860f2a4f02a95714/images.png)
+
 
 # Shader programを書いてみよう
 
