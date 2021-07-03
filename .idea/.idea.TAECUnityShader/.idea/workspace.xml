@@ -17,6 +17,7 @@
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Shader/MyFirstShader.shader" />
       <option value="$PROJECT_DIR$/Assets/Shader/MySecondShader.shader" />
+      <option value="$PROJECT_DIR$/Assets/Shader/MyThirdShader.shader" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1un39QXQS4676pysMqDMa5wG9bs" />
@@ -65,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1625287374000</updated>
-      <workItem from="1625287377735" duration="1914000" />
+      <workItem from="1625287377735" duration="3446000" />
     </task>
     <servers />
   </component>
