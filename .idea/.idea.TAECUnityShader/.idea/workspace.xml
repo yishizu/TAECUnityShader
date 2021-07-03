@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="351497af-aa73-483d-be10-da83e7b288dc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Shader/MyFirstShader.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shader/MyFirstShader.shader" afterDir="false" />
-    </list>
+    <list default="true" id="351497af-aa73-483d-be10-da83e7b288dc" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -59,7 +57,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1625287374000</updated>
-      <workItem from="1625287377735" duration="416000" />
+      <workItem from="1625287377735" duration="519000" />
     </task>
     <servers />
   </component>
