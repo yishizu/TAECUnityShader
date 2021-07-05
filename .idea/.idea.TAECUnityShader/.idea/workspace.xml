@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="351497af-aa73-483d-be10-da83e7b288dc" name="Default Changelist" comment="" />
+    <list default="true" id="351497af-aa73-483d-be10-da83e7b288dc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TAECUnityShader/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TAECUnityShader/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/HelloShader.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/HelloShader.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shader/NewSurfaceShader 1.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shader/NewSurfaceShader 1.shader.meta" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,6 +16,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/CGIncludes/UnityShaderVariables.cginc" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/CGIncludes/Lighting.cginc" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../Program Files/Unity/Hub/Editor/2020.3.4f1/Editor/Data/CGIncludes/UnityPBSLighting.cginc" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -19,6 +26,13 @@
       <option value="$PROJECT_DIR$/Assets/Shader/MyThirdShader.shader" />
       <option value="$PROJECT_DIR$/Assets/Cross Section Shader/Shaders/OnePlaneBSP.shader" />
       <option value="$PROJECT_DIR$/Assets/Shader/MySecondShader.shader" />
+      <option value="$PROJECT_DIR$/Assets/Shader/StandardPBR.shader" />
+      <option value="$PROJECT_DIR$/Assets/Shader/StandardSpecular.shader" />
+      <option value="$PROJECT_DIR$/Assets/Shader/BasicLambert.shader" />
+      <option value="$PROJECT_DIR$/Assets/Shader/BasicLambert2.shader" />
+      <option value="$PROJECT_DIR$/Assets/Shader/BasicLambert 1.shader" />
+      <option value="$PROJECT_DIR$/Assets/Shader/ToonRampAlbedo.shader" />
+      <option value="$PROJECT_DIR$/Assets/Shader/ToonRamp.shader" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1un39QXQS4676pysMqDMa5wG9bs" />
@@ -31,6 +45,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -65,6 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1625287374000</updated>
       <workItem from="1625287377735" duration="880000" />
+      <workItem from="1625446905673" duration="5792000" />
     </task>
     <servers />
   </component>

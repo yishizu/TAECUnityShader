@@ -1,29 +1,30 @@
-Shader "Custom/NewSurfaceShader 1"
+Shader "GEL/StandardSpecular"
 {
     Properties
     {
         _Color ("Color", Color) = (1,1,1,1)
         _MainTex ("Albedo (RGB)", 2D) = "white" {}
+        _MetallicTex ("Metallic", 2D) = "white" {}
         _Glossiness ("Smoothness", Range(0,1)) = 0.5
         _Metallic ("Metallic", Range(0,1)) = 0.0
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" }
-        LOD 200
-
+        Tags { "Queue"="Geometry" }
         CGPROGRAM
         // Physically based Standard lighting model, and enable shadows on all light types
-        #pragma surface surf Standard fullforwardshadows
+        #pragma surface surf StandardSpecular
 
         // Use shader model 3.0 target, to get nicer looking lighting
         #pragma target 3.0
 
         sampler2D _MainTex;
+        sampler2D _MetallicTex;
 
         struct Input
         {
             float2 uv_MainTex;
+            float2 uv_MetallicTex;
         };
 
         half _Glossiness;
@@ -37,14 +38,14 @@ Shader "Custom/NewSurfaceShader 1"
             // put more per-instance properties here
         UNITY_INSTANCING_BUFFER_END(Props)
 
-        void surf (Input IN, inout SurfaceOutputStandard o)
+        void surf (Input IN, inout SurfaceOutputStandardSpecular o)
         {
             // Albedo comes from a texture tinted by color
             fixed4 c = tex2D (_MainTex, IN.uv_MainTex) * _Color;
             o.Albedo = c.rgb;
             // Metallic and smoothness come from slider variables
-            o.Metallic = _Metallic;
-            o.Smoothness = _Glossiness;
+            o.Specular = _Metallic;
+            o.Smoothness = tex2D (_MetallicTex, IN.uv_MetallicTex).r;
             o.Alpha = c.a;
         }
         ENDCG
