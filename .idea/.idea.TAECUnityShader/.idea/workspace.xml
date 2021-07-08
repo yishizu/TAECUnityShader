@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="351497af-aa73-483d-be10-da83e7b288dc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.TAECUnityShader/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TAECUnityShader/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Shader/MyThirdShader.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shader/MyThirdShader.shader" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +21,6 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Shader/MyFirstShader.shader" />
-      <option value="$PROJECT_DIR$/Assets/Shader/MyThirdShader.shader" />
       <option value="$PROJECT_DIR$/Assets/Cross Section Shader/Shaders/OnePlaneBSP.shader" />
       <option value="$PROJECT_DIR$/Assets/Shader/MySecondShader.shader" />
       <option value="$PROJECT_DIR$/Assets/Shader/StandardPBR.shader" />
@@ -31,6 +31,7 @@
       <option value="$PROJECT_DIR$/Assets/Shader/ToonRampAlbedo.shader" />
       <option value="$PROJECT_DIR$/Assets/Shader/ToonRamp.shader" />
       <option value="$PROJECT_DIR$/Assets/Shader/Alpha.shader" />
+      <option value="$PROJECT_DIR$/Assets/Shader/MyThirdShader.shader" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1un39QXQS4676pysMqDMa5wG9bs" />
@@ -80,7 +81,7 @@
       <updated>1625287374000</updated>
       <workItem from="1625287377735" duration="880000" />
       <workItem from="1625446905673" duration="5792000" />
-      <workItem from="1625473030396" duration="3061000" />
+      <workItem from="1625473030396" duration="5079000" />
     </task>
     <servers />
   </component>
